@@ -1,0 +1,34 @@
+/*   Theo Brodén   */
+body {
+    height: 100vh;
+    background-color: cornflowerblue;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 80px 80px auto 70px;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer"
+    ;
+}
+
+header {
+}
+
+h1 {
+	font-size: 10em;
+	font-family: monospace, serif;
+    text-align: center;
+    color: black;
+    background-image: linear-gradient(to left bottom, red, orange, yellow, green, blue, indigo, violet);
+    padding-top: 10px;
+    position: relative;
+}
+
+
