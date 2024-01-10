@@ -1,0 +1,29 @@
+body{
+    background-color:rgb(133, 82, 65)
+}
+
+img{
+    width: 20%;
+
+    margin:auto;
+}
+
+main section {
+    display: flex;
+
+    justify-content: center;
+}
+
+h1{
+    font-family:arial;
+
+    font-size:25px;
+
+    text-align: center;
+
+    color:rgb(0, 0, 0)
+}
+
+.recept{
+    
+}
