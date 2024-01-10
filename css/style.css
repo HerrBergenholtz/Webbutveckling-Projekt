@@ -12,7 +12,7 @@ nav {
 
 	margin-top: -4px;
 	height: 80px;
-	width: 100%;
+	width: 99vw;
 	position: fixed;
 	top: 0;
 	z-index: 1;
@@ -22,7 +22,7 @@ nav {
 
 nav>ul {
 	display: grid;
-	grid-template-columns: 1fr 2.5fr 2.5fr 2.5fr 2.5fr;
+	grid-template-columns: 1fr 2.5fr 2.5fr 2.5fr;
 	grid-gap: 60px;
 	margin-top: 3px;
 	height: 80px;
@@ -37,7 +37,6 @@ nav>ul>li {
 	width: 150px;
 	text-align: center;
 	align-items: center;
-	height: 30px;
 }
 
 nav>ul>li:nth-child(1)>a {
@@ -77,20 +76,35 @@ main > section {
 	background-position: center;
 }
 
-main > section > section {
+main > section > section:nth-child(1) {
     grid-column: 2/3;
     grid-row: 2/3;
     width: min-content;
     margin: auto;
 }
 
-main > section > section input {
-    width: 300px;
-    height: 30px;
+main > section > section input[type="text"] {
+    width: 350px;
+    height: 40px;
+	border-radius: 10px;
+}
+
+main > section > section:nth-child(2) {
+	grid-column: 2/3;
+	grid-row: 3/4;
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+}
+
+main > section >section:nth-child(2) button {
+	height: 30px;
+	width: 90%;
+	border-radius: 20px;
 }
 
 a:hover {
     color: green;
+	transition: 0.2s ease;
 }
 
 a:active {
