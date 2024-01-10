@@ -24,9 +24,15 @@ header {
 
 h1 {
 	font-size: 4em;
-	font-family: monospace, serif;
+	font-family: monospace;
+    text-align: center;
+}
+
+main {
     
 }
+
+
 
 
 
