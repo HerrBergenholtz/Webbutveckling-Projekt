@@ -19,7 +19,7 @@ body {
 }
 
 .wrapper-info main {
-    margin-top: 400px;
+    margin-top: 19em;
 }
 
 
@@ -38,7 +38,7 @@ body {
     color: #000;
     margin-bottom: 25px;
     position: relative;
-    margin-top: 400px;
+    margin-top: 6em;
 }
 
 .wrapper-info h1::after {
