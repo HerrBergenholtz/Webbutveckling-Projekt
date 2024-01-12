@@ -1,12 +1,12 @@
 /*   Theo Brodén   */
 body {
-    height: 100vh;
     background-color: #fff;
+    margin: 0;
 }
 
-.wrapper {
+.wrapper-info {
     width: 100%;
-    height: 100%;
+    height: 98vh;
     margin: 0 auto;
     display: grid;
     grid-template-rows: 80px 80px auto 70px;
@@ -18,27 +18,30 @@ body {
     ;
 }
 
+.wrapper-info main {
+    margin-top: 400px;
+}
 
 
-
-.heading {
+.wrapper-info header {
     width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
-.heading h1 {
+.wrapper-info h1 {
     font-size: 50px;
     color: #000;
     margin-bottom: 25px;
     position: relative;
+    margin-top: 400px;
 }
 
-.heading h1::after {
+.wrapper-info h1::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -48,53 +51,50 @@ body {
     background-color: green;
 }
 
-.container {
+.wrapper-info .container {
     width: 90%;
     margin: 0 auto;
     padding: 10px 20px;
 }
 
-section {
+.wrapper-info section {
     width: 70%;
-    margin: 70px auto;
-}
-
-.about {
+    height: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
-.about-img {
+.wrapper-info img {
     flex: 1;
     overflow: hidden;
     margin-right: 40px;
-
-}
-
-.about-img img {
-    max-width: 100%;
+    max-width: 35%;
     height: auto;
     display: block;
     transition: 0.5s ease;
+
 }
 
-.about-img:hover img{
+
+.wrapper-info img:hover{
     transform: scale(1.2);
 }
 
-.about-content {
+.wrapper-info .about-content {
     flex: 1;
+    max-width: 60%;
 }
 
-.about-content p {
+.wrapper-info .about-content p {
     font-size: 18px;
     line-height: 1.5;
     color: #666;
+    width: 75%;
 }
 
-.about-content .startsida {
+.wrapper-info .about-content .startsida {
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -103,22 +103,82 @@ section {
     border-radius: 25px;
     margin-top: 15px;
     transition: 0.3s ease;
-    background-color: #4caf50;
+    background-color: rgba(23, 86, 51, 0.85);
     
 
 }
 
-.about-content .startsida:hover {
-    background-color: #3e8e41;
+.wrapper-info .about-content .startsida:hover {
+    background-image: linear-gradient(rgba(23, 86, 51, 0.85), rgb(88, 145, 88)); 
     transform: scale(1.2);
     font-size: 21px;
 
 }
 
 
+footer {
+    background-color: rgba(23, 86, 51, 0.85);
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+}
 
 
+nav {
 
+	margin-top: -4px;
+	height: 80px;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	background-color: rgba(23, 86, 51, 0.85);
+	backdrop-filter: blur(13px);
+}
+
+nav>ul {
+	display: grid;
+	grid-template-columns: 1fr 2.5fr 2.5fr 2.5fr;
+	grid-gap: 60px;
+	margin-top: 3px;
+	height: 80px;
+	width: 50%;
+	text-align: center;
+}
+
+nav>ul>li {
+	list-style-type: none;
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+	text-align: center;
+	align-items: center;
+}
+
+nav>ul>li:nth-child(1)>a {
+	padding: 0;
+	padding-top: 5px;
+}
+
+nav ul li img {
+	max-width: 70px;
+}
+
+
+nav ul li a, nav a {
+	margin-top: 7px;
+	width: 100px;
+	top: 0px;
+	font-size: 17px;
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+	display: block;
+}
 
 
 
