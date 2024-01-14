@@ -1,14 +1,18 @@
 /*Zacharias*/
-body {
+body { /*Ändrar textfärg till svart och line-height höjer jag med 40%, jag tar även bort den margin som är standars så att jag ska kunna ha element som tar upp hela bredden av skärmen*/
     color: black;
+	line-height: 140%;
 	margin: 0;
+	background-color: #ececec;
 }
 
 .wrapper {
     display: grid;
 }
 
-.wrapper nav {
+/*Navbar*/
+
+.wrapper header nav {
 	margin-top: -4px;
 	height: 80px;
 	width: 100%;
@@ -16,55 +20,54 @@ body {
 	top: 0;
 	z-index: 1;
 	background-color: rgba(23, 86, 51, 0.85);
-	backdrop-filter: blur(13px);
+	backdrop-filter: blur(13px); 
+	/*Jag vill att min navbar ska ha en blur effekt, därför använder jag rgba för att göra den delvis genomskinlig och sen lägger jag till blur med backdrop-filter*/
 }
 
-.wrapper nav>ul {
+.wrapper header nav > ul {
+	/*Jag väljer att visa min nav som en grid som endast har en kolumn så att alla list-items ligger vågrätt*/
 	display: grid;
-	grid-template-columns: 1fr 2.5fr 2.5fr 2.5fr;
+	grid-template-columns: 1fr repeat(3, 2.5fr);
 	grid-gap: 60px;
-	margin-top: 3px;
+	margin-top: 10px;
 	height: 80px;
 	width: 50%;
 	text-align: center;
 }
 
-.wrapper nav>ul>li {
+.wrapper header nav > ul > li { 
+	/*Stylar list-items så att de är centrerade*/
 	list-style-type: none;
-	margin-left: auto;
-	margin-right: auto;
 	width: 150px;
-	text-align: center;
-	align-items: center;
 }
 
-.wrapper nav>ul>li:nth-child(1)>a {
+.wrapper header nav >ul > li:nth-child(1) > a { 
+	/**/
 	padding: 0;
 	padding-top: 5px;
 }
 
-nav ul li img {
+.wrapper header ul li img {
 	max-width: 70px;
 }
 
-
-.wrapper nav ul li a, nav a {
-	margin-top: 7px;
+.wrapper header nav ul li a { 
+	/*Enkel style för länkarna i min nav för positionering och utseende*/
 	width: 100px;
-	top: 0px;
-	font-size: 17px;
+	font-size: 18px;
 	text-decoration: none;
-	color: white;
 	padding: 20px;
 	display: block;
 }
-
 
 .wrapper h1 {
     display: none;
 }
 
+/*Bild*/
+
 .wrapper main > section:first-child {
+	/*Eftersom att det ska finnas en sökruta samt som ett antal länkar i den här sektionen så gör jag ett 3*3 grid så att jag lätt kan positionera sökrutan i mitten och länkarna under den, ändrar även bakgrundsbilden*/
     display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
@@ -75,27 +78,31 @@ nav ul li img {
 	background-position: center;
 }
 
-.wrapper main > section > section:nth-child(1) {
+.wrapper main > section > section:first-child {
+	/*Placerar sökrutan i mitten på griden*/
     grid-column: 2/3;
     grid-row: 2/3;
     width: min-content;
     margin: auto;
 }
 
-.wrapper main > section > section input[type="text"] {
+.wrapper main > section > section:first-child input[type="text"] {
+	/*Sätter höjd och bredd samt rundar hörn*/
     width: 350px;
     height: 40px;
 	border-radius: 10px;
 }
 
-.wrapper main > section > section:nth-child(2) {
+.wrapper main > section:first-child > section:nth-child(2) {
+	/*Placerar länkarna på mitt grid samt som att göra det till ett grid*/
 	grid-column: 2/3;
 	grid-row: 3/4;
 	display: grid;
 	grid-template-columns: repeat(5, auto);
 }
 
-.wrapper main > section >section:nth-child(2) a {
+.wrapper main > section:first-child > section:nth-child(2) a {
+	/*Jag stylar länkarna så att de ser ut som knappar, genom att ge dem en annan bakgrundsfärg och en border med rundade hörn*/
 	height: 30px;
 	width: 90%;
 	background-color: #f3f3f3;
@@ -109,16 +116,105 @@ nav ul li img {
 	border-radius: 20px;
 }
 
-.wrapper a:hover {
-    color: green;
-	transition: 0.2s ease;
+.wrapper main > section:nth-child(2) {
+	/*Sektionen som innehåller lokala menyn och sektionen med populära produkter visar jag som ett grid*/
+	display: grid;
+	grid-template-columns: 1fr 4fr;
 }
 
-.wrapper a:active {
-    color: rebeccapurple;
+/*Lokal nav*/
+
+.wrapper aside {
+	/*Sätter margin-left och right till outo för att centrera min aside vågrätt */
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.wrapper a:focus {
-    color: red;
+.wrapper aside ul {
+	/*Även den oordnade listan visas som ett grid med mellanrum varje ruta*/
+	display: grid;
+	gap: 10px;
+	padding-inline-start: 0;
+	/*Tar också bort padding inline start eftersom att den inte behövs*/
 }
 
+.wrapper aside ul li {
+	list-style-type: none;
+	width: 80%;
+	background-color: #fff;
+}
+
+.wrapper aside ul li a {
+	/*Gör så att länkarna passar bra in i list elementen*/
+	display: block;
+	color: inherit;
+	text-decoration: none;
+	padding: 15px;
+}
+
+.wrapper aside ul li:hover {
+	background-color: #175633;
+}
+
+.wrapper-grill aside ul li:nth-child(2) {
+	background-color: #175633;
+}
+
+/*Populära produkter*/
+
+.wrapper main > section:nth-child(2) section:nth-child(2) > section {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	gap: 30px;
+}
+
+.wrapper h2 {
+	text-align: center;
+	font-size: 30px;
+	margin: 30px;
+}
+
+.wrapper main > section:nth-child(2) section:nth-child(2) article {
+	width: 20vw;
+	background-color: #f3f3f3;
+}
+
+.wrapper main > section:nth-child(2) section:nth-child(2) article:hover {
+	box-shadow: 0 0 10px 10px #cecece;
+	transition: 0.3s ease;
+}
+
+.wrapper h3 {
+	padding-left: 10px;
+}
+
+.wrapper main > section:nth-child(2) section:nth-child(2) article a {
+	color: inherit;
+}
+
+.wrapper main > section:nth-child(2) section:nth-child(2) article img {
+	width: 20vw;
+}
+
+.wrapper main > section:nth-child(2) section:nth-child(2) article p {
+	font-size: 16px;
+	padding-left: 20px;
+} 
+
+a:link {
+	color: #fff;
+}
+
+a:visited {
+	color: #e0e0e0;
+}
+
+a:hover {
+	color: #537b64;
+}
+
+a:active {
+	color: #0f3520;
+}
