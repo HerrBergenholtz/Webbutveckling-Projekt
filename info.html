@@ -1,49 +1,50 @@
 <!--  Theo Brodén  -->
 
-<!DOCTYPE html>
-<html lang="sv">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/style.css" />
-		<title>Information</title>
+<!DOCTYPE html> <!--Anger språket html för webbplatsen-->
+<html lang="sv"> <!--Sätter språket till svesnka för webbplatsen-->
+	<head> <!--Innehåller sidans metadata-->
+		<meta charset="UTF-8" /> <!--Gör om dataspråk till människospråk-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--Gör så att alla enheter kan använda sidan-->
+		<link rel="stylesheet" href="css/style.css" /> <!--Importerar koden från css till webbsidan så att man desgina sidan med färger osv-->
+		<title>Information</title> <!--Ger namnet på sidan, syns på fliken-->
 	</head>
-	<body>
-		<div class="wrapper-info">
+	<body> <!--Bodyn på sidan är det vi ser i skillnad från head som inte syns-->
+		<div class="wrapper-info"> <!--Wrappern omfamnar allt på sidan, dvs webbsidans innehåll och allt som vi kan se på sidan-->
 
-			<header>		
-				<nav>
-					<ul>
+			<header> <!--Det som ska stå högst upp på sidan står alltid i header-->
+				<nav> <!--Gör en global meny-->
+					<ul> <!--En punktlista över navbaren-->
 						<li>
-							<a href="index.html"><img src="src/lamont.jpg" alt="Logga"></a>
+							<a href="index.html"><img src="src/lamont.jpg" alt="Logga"></a> <!--Hemsidan--> <!--a är en länk, li är en punkt på listan, img är för att lägga till en bild-->
 						</li>
 						<li>
-							<a href="info.html">Information</a>
+							<a href="info.html">Information</a> <!--Informationsidan-->
 						</li>
 						<li>
-							<a href="#">Recept</a>
+							<a href="#">Recept</a> <!--Receptsidan på Tims favorit mat som är kroppkakor-->
 						</li>
 						<li>
 							<a href="#">Kontakta Tim</a>
 						</li>
 					</ul>
 				</nav>		
-				<h1>Information</h1>
+				<h1>Information</h1> <!--Sidans huvudrubrik-->
 			</header>
-				<main>
-					<section class="about">
-						<img src="src/testicles.JPG" alt="">
-							<article class="about-content">
-									<p>Vi är tre grabbar som går vårt andra år på gymnasieskolan Teknikum i Växjö. 
+				<main> <!--Här i ligger sidans huvudinnehål-->
+					<section> <!--Section används för att skapa sektioner av innehållet i main-->
+						<img src="src/testicles.JPG" alt=""> <!--Infogar en bild från mappen src-->
+							<article> <!--Ett article element innehåller information som är fristående och som är avsedd för distribution -->
+									<p> <!--XHTML taggen p står för stycke, där man skriver text som ska visas på sidan -->
+										Vi är tre grabbar som går vårt andra år på gymnasieskolan Teknikum i Växjö. 
 										Vi håller på med en webbplats som ska innehålla massvis av olika recept som du kan laga. 
 										Hemsidan består utav matiga bilder och färger som får din mage att kurra.
 									</p>
 									<p>Utvecklare: Zacharias, Albin och Theo</p>
-								<a href="index.html" class="startsida">Startsida</a>
+								<a href="index.html">Startsida</a>
 							</article>
 					</section>
 				</main>
-			<footer>
+			<footer> <!--Footer elemtet är webbsidans eller webbplatsen sidfot och ska alltid finnas längst ner på sidan-->
 				<p>Kontakt: Tantagda@recept.se</p>
 			</footer>
 			

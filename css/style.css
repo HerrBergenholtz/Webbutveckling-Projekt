@@ -19,7 +19,7 @@ body {
 }
 
 .wrapper-info main {
-    margin-top: 19em;
+    margin-top: 20em;
 }
 
 
@@ -51,16 +51,11 @@ body {
     background-color: green;
 }
 
-.wrapper-info .container {
-    width: 90%;
-    margin: 0 auto;
-    padding: 10px 20px;
-}
 
 .wrapper-info section {
     width: 70%;
     height: 80%;
-    margin: 0 auto;
+    margin: 0 auto; /*Centrerar innehållet i section på sidan*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,6 +69,7 @@ body {
     height: auto;
     display: block;
     transition: 0.5s ease;
+    border-radius: 7%;    
 
 }
 
@@ -82,19 +78,19 @@ body {
     transform: scale(1.2);
 }
 
-.wrapper-info .about-content {
+.wrapper-info article {
     flex: 1;
     max-width: 60%;
 }
 
-.wrapper-info .about-content p {
+.wrapper-info article p {
     font-size: 18px;
     line-height: 1.5;
     color: #666;
     width: 75%;
 }
 
-.wrapper-info .about-content .startsida {
+.wrapper-info article a {
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -108,8 +104,8 @@ body {
 
 }
 
-.wrapper-info .about-content .startsida:hover {
-    background-image: linear-gradient(rgba(23, 86, 51, 0.85), rgb(88, 145, 88)); 
+.wrapper-info article a:hover {
+    background-image: linear-gradient(rgba(23, 86, 51, 0.85), rgba(25, 95, 54, 0.5) , rgb(23, 77, 23)); 
     transform: scale(1.2);
     font-size: 21px;
 
