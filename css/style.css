@@ -1,29 +1,65 @@
 body{
-    background-color:rgb(133, 82, 65)
-}
+    display: flex;
 
-img{
-    width: 20%;
+    align-items: center;
 
-    margin:auto;
+    justify-content: center;
+
+    background-color: rgb(173, 154, 128);
+
 }
 
 main section {
     display: flex;
 
     justify-content: center;
+
+}
+
+img{
+    width: 25%;
+
+    margin:auto;
+
 }
 
 h1{
     font-family:arial;
 
-    font-size:25px;
+    font-size:30px;
 
     text-align: center;
 
-    color:rgb(0, 0, 0)
 }
 
-.recept{
+p{
+    font-family: arial;
+
+    font-size: 20px;
+
+    text-align: center;
     
 }
+
+h2{
+    font-family: arial;
+
+    font-size: 25px;
+
+    text-align: center;
+
+}
+
+ul > li{
+    font-family: arial;
+
+    font-size: 20px;
+
+    text-align: center;
+
+    width: fit-content;
+
+    margin: auto;
+
+}
+
