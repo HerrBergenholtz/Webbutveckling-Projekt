@@ -11,40 +11,43 @@
 	<body id="info"> <!--Bodyn på sidan är det vi ser i skillnad från head som inte syns-->
 		<div class="wrapper"> <!--Wrappern omfamnar allt på sidan, dvs webbsidans innehåll och allt som vi kan se på sidan-->
 
-			<header> <!--Det som ska stå högst upp på sidan står alltid i header-->
-				<nav> <!--Gör en global meny-->
-					<ul> <!--En punktlista över navbaren-->
-						<li>
-							<a href="index.html"><img src="src/lamont.jpg" alt="Logga"></a> <!--Hemsidan--> <!--a är en länk, li är en punkt på listan, img är för att lägga till en bild-->
-						</li>
-						<li>
-							<a href="info.html">Information</a> <!--Informationsidan-->
-						</li>
-						<li>
-							<a href="#">Recept</a> <!--Receptsidan på Tims favorit mat som är kroppkakor-->
-						</li>
-						<li>
-							<a href="#">Kontakta Tim</a>
-						</li>
-					</ul>
-				</nav>		
-				<h1>Information</h1> <!--Sidans huvudrubrik-->
-			</header>
-				<main> <!--Här i ligger sidans huvudinnehål-->
-					<section> <!--Section används för att skapa sektioner av innehållet i main-->
-						<img src="../src/testicles.JPG" alt="Testiklar"> <!--Infogar en bild från mappen src-->
-							<article> <!--Ett article element innehåller information som är fristående och som är avsedd för distribution -->
-									<p> <!--XHTML taggen p står för stycke, där man skriver text som ska visas på sidan -->
-										På denna webbplats hittar du massvis av olika recept som du kan prova att laga där hemma. 
-										För att komma till vår hemsida klickar du på den gröna knappen, strax nedanför. 
-										Om det uppstår problem eller fel, så når du oss på mail addressen som du finner längst ner på sidan
-										 
-									</p>
-									<p>Utvecklare: Zacharias, Albin och Theo</p>
-								<a href="../index.html">Startsida</a>
-							</article>
-					</section>
-				</main>
+            <header>
+                <nav><!--Den globala navigations menyn innehåller en länk kopplad till en bild som går tillbaka till startsidan samt ett antal länkar-->
+                    <ul>
+                        <li>
+                            <a href="../index.html"><h1>Tims Recept</h1></a>
+                        </li>
+                        <li>
+                            <a href="./info.html">Information</a>
+                        </li>
+                        <li>
+                            <a href="./kott.html">Kött</a>
+                        </li>
+                        <li>
+                            <a href="#">Veganskt</a>
+                        </li>
+                        <li>
+                            <a href="#">Desert</a>
+                        </li>
+                    </ul>
+                </nav>
+				<h2>Information</h2> <!--Sidans huvudrubrik-->
+            </header>
+			<main> <!--Här i ligger sidans huvudinnehål-->
+				<section> <!--Section används för att skapa sektioner av innehållet i main-->
+					<img src="../src/testicles.JPG" alt="Testiklar"> <!--Infogar en bild från mappen src-->
+						<article> <!--Ett article element innehåller information som är fristående och som är avsedd för distribution -->
+								<p> <!--XHTML taggen p står för stycke, där man skriver text som ska visas på sidan -->
+									På denna webbplats hittar du massvis av olika recept som du kan prova att laga där hemma. 
+									För att komma till vår hemsida klickar du på den gröna knappen, strax nedanför. 
+									Om det uppstår problem eller fel, så når du oss på mail addressen som du finner längst ner på sidan
+									 
+								</p>
+								<p>Utvecklare: Zacharias, Albin och Theo</p>
+							<a href="../index.html">Startsida</a>
+						</article>
+				</section>
+			</main>
 			<footer> <!--Footer elemtet är webbsidans eller webbplatsen sidfot och ska alltid finnas längst ner på sidan-->
 				<p>Kontakt: Tantagda@recept.se</p>
 			</footer>

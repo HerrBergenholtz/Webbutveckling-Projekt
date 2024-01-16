@@ -3,9 +3,9 @@ let resultatElem;
 let inputElem;
 let nyckelOrd = [
     "Kroppkakor",
-    "Pasta Pesto",
-    "Glass",
-    "Svampsoppa"
+    "Köttbullar",
+    "Fläsklägg med Rotmos",
+    "Yakinku"
 ];
 
 window.onload = () => {
@@ -35,7 +35,7 @@ function display(resultat) {
 }
 
 function dirigera(element) {
-    const destination = element.innerHTML.toLowerCase().split(' ').join('-');
+    const destination = element.innerHTML.replace("ä", "a").replace("ä", "a").replace("ö", "o").toLowerCase().split(' ').join('-');;
 
     if (window.location.href.includes("index")) {
         window.location.assign("html/" + destination + ".html");
@@ -43,3 +43,5 @@ function dirigera(element) {
         window.location.assign(destination + ".html")
     }
 }
+
+//element.innerHTML.replace("ä", "a").toLowerCase().split(' ').join('-');
