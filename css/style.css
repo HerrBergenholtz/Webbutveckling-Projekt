@@ -1,3 +1,71 @@
+/*Albin*/
+
+body{
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: rgb(173, 154, 128);
+
+}
+
+main section {
+    display: flex;
+
+    justify-content: center;
+
+}
+
+img{
+    width: 25%;
+
+    margin:auto;
+
+}
+
+h1{
+    font-family:arial;
+
+    font-size:30px;
+
+    text-align: center;
+
+}
+
+p{
+    font-family: arial;
+
+    font-size: 20px;
+
+    text-align: center;
+    
+}
+
+h2{
+    font-family: arial;
+
+    font-size: 25px;
+
+    text-align: center;
+
+}
+
+ul > li{
+    font-family: arial;
+
+    font-size: 20px;
+
+    text-align: center;
+
+    width: fit-content;
+
+    margin: auto;
+
+}
+
+
 /*   Theo Brodén   */
 body {
     background-color: #fff;
