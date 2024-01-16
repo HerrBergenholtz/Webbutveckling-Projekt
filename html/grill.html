@@ -8,6 +8,7 @@
             <meta charset="UTF-8">
             <link rel="icon" href="" type="image/x-icon">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="../javascript/script.js"></script>
             <title>Tims Recept</title>
         </head>
 
@@ -34,9 +35,13 @@
                 
                 <main><!--Sidans huvudinnehåll-->
                     <section><!--En sektion som befinner sig längst upp i main, den tar upp hela skärmens bredd och har en bakgrundsbild tillsammans med en sökruta och ett antal länkar som leder till sidor som har recept av olika typer av maträtter-->
-                        <section>
-                            <input type="text" placeholder="Sök här, annars gay">
+                    <section>
+                        <form>
+                            <input type="text" placeholder="Sök efter recept" id="sökRuta">
+                        </form>
+                        <section id="resultat">
                         </section>
+                    </section>
 
                         <section><!--En sektion som innehåller länkarna-->
                             <a href="#">Allergi</a>

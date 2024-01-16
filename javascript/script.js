@@ -1,3 +1,4 @@
+//Globala variabler
 let resultatElem;
 let inputElem;
 let nyckelOrd = [
@@ -17,24 +18,28 @@ function complete() {
     let resultat = [];
     let input = inputElem.value;
     if (input.length) {
-        resultat = nyckelOrd.filter((keyword) => {
-        return keyword.toLowerCase().includes(input.toLowerCase());
+        resultat = nyckelOrd.filter((ord) => {
+            return ord.toLowerCase().includes(input.toLowerCase());
         });
-        console.log(resultat);
     }
 
     display(resultat);
 }
 
 function display(resultat) {
-    const innehåll = resultat.map((list) => {
-        return "<li onclick=redirect(this)>" + list + "</li>";
-    })
+    const innehåll = resultat.map((lista) => {
+        return "<li onclick=dirigera(this)>" + lista + "</li>";
+    });
 
-    resultatElem.innerHTML = "<ul>" + innehåll.join("") + "</ul>"
+    resultatElem.innerHTML = "<ul>" + innehåll.join("") + "</ul>";
 }
 
-function redirect (list) {
-    const location = list.innerHTML
-    window.location.replace("html/" + location + ".html")
+function dirigera(element) {
+    const destination = element.innerHTML.toLowerCase().split(' ').join('-');
+
+    if (window.location.href.includes("index")) {
+        window.location.assign("html/" + destination + ".html");
+    } else {
+        window.location.assign(destination + ".html")
+    }
 }
