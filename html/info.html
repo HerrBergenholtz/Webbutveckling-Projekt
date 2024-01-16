@@ -5,11 +5,11 @@
 	<head> <!--Innehåller sidans metadata-->
 		<meta charset="UTF-8" /> <!--Gör om dataspråk till människospråk-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--Gör så att alla enheter kan använda sidan-->
-		<link rel="stylesheet" href="css/style.css" /> <!--Importerar koden från css till webbsidan så att man desgina sidan med färger osv-->
+		<link rel="stylesheet" href="../css/style.css" /> <!--Importerar koden från css till webbsidan så att man desgina sidan med färger osv-->
 		<title>Information</title> <!--Ger namnet på sidan, syns på fliken-->
 	</head>
-	<body> <!--Bodyn på sidan är det vi ser i skillnad från head som inte syns-->
-		<div class="wrapper-info"> <!--Wrappern omfamnar allt på sidan, dvs webbsidans innehåll och allt som vi kan se på sidan-->
+	<body id="info"> <!--Bodyn på sidan är det vi ser i skillnad från head som inte syns-->
+		<div class="wrapper"> <!--Wrappern omfamnar allt på sidan, dvs webbsidans innehåll och allt som vi kan se på sidan-->
 
 			<header> <!--Det som ska stå högst upp på sidan står alltid i header-->
 				<nav> <!--Gör en global meny-->
@@ -32,7 +32,7 @@
 			</header>
 				<main> <!--Här i ligger sidans huvudinnehål-->
 					<section> <!--Section används för att skapa sektioner av innehållet i main-->
-						<img src="src/testicles.JPG" alt=""> <!--Infogar en bild från mappen src-->
+						<img src="../src/testicles.JPG" alt="Testiklar"> <!--Infogar en bild från mappen src-->
 							<article> <!--Ett article element innehåller information som är fristående och som är avsedd för distribution -->
 									<p> <!--XHTML taggen p står för stycke, där man skriver text som ska visas på sidan -->
 										På denna webbplats hittar du massvis av olika recept som du kan prova att laga där hemma. 
@@ -41,7 +41,7 @@
 										 
 									</p>
 									<p>Utvecklare: Zacharias, Albin och Theo</p>
-								<a href="index.html">Startsida</a>
+								<a href="../index.html">Startsida</a>
 							</article>
 					</section>
 				</main>
