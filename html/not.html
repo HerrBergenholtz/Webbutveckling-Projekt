@@ -3,101 +3,95 @@
 
 <html>
     <head>
-        <head>
-            <link rel="stylesheet" type="text/css" href="../css/style.css">
-            <meta charset="UTF-8">
-            <link rel="icon" href="" type="image/x-icon">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <script src="../javascript/script.js"></script>
-            <title>Tims Recept</title>
-        </head>
-
-        <body id="index">
-            <div class="wrapper-kött wrapper-nöt"><!--En div som innehåller allt innehåll på sidan, i detta dokumentet så heter den wrapper, i andra dokument kommer den att ha andra namn vilket kommer låta oss att använda samma css fil och göra olika layouts till olika sidor, det gör det också lättare att undvika klassselektorer-->
-                <header>
-                    <nav><!--Den globala navigations menyn innehåller en länk kopplad till en bild som går tillbaka till startsidan samt ett antal länkar-->
-                        <ul>
-                            <li>
-                                <a href="../index.html"><h1>Tims Recept</h1></a>
-                            </li>
-                            <li>
-                                <a href="./info.html">Information</a>
-                            </li>
-                            <li>
-                                <a href="./kott.html">Kött</a>
-                            </li>
-                            <li>
-                                <a href="#">Veganskt</a>
-                            </li>
-                            <li>
-                                <a href="#">Desert</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </header>
-                
-                <main><!--Sidans huvudinnehåll-->
-                    <section><!--En sektion som befinner sig längst upp i main, den tar upp hela skärmens bredd och har en bakgrundsbild tillsammans med en sökruta och ett antal länkar som leder till sidor som har recept av olika typer av maträtter-->
-                        <section>
-                            <form>
-                                <input type="text" placeholder="Sök efter recept" id="sökRuta">
-                            </form>
-                            <section id="resultat">
-                            </section>
-                        </section>
-                    </section>
-
-                    <section>
-                        <aside>
-                            <nav>
-                                <ul>
-                                    <li>
-                                        <a href="./kott.html">Kött</a>
-                                        <ul>
-                                            <li>
-                                                <a href="./not.html">Nöt</a>
-                                            </li>
-                                            <li>
-                                                <a href="./flask.html">Fläsk</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">Veganskt</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Desert</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </aside>
-
-                        <section>
-                            <h2>Recept med Nötkött</h2>
-                            <section>    
-                                <a href="./yakinku.html">
-                                    <article>
-                                        <img src="../src/yakiniku-foto-nurlan-mathem.jpeg" alt="Mat">
-                                        <h3>Yakinku</h3>
-                                        <p>50 minuter - Kött</p>
-                                    </article>
-                                </a>
-    
-                                <a href="./kottbullar.html">
-                                    <article>
-                                        <img src="../src/SwedishMeatballs.webp" alt="Mat">
-                                        <h3>Köttbullar</h3>
-                                        <p>50 minuter - Kött</p>
-                                    </article>
-                                </a>
-                            </section>
-                        </section>
-                    </section>
-                </main>
-                <footer> <!--Footer elemtet är webbsidans eller webbplatsen sidfot och ska alltid finnas längst ner på sidan-->
-                    <p>Kontakt: Tantagda@recept.se</p>
-                </footer>
-            </div>
-        </body>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../javascript/script.js"></script>
+        <title>Tims Recept</title>
     </head>
+    <body id="index">
+        <div class="wrapper-kött wrapper-nöt"><!--En div som innehåller allt innehåll på sidan, i detta dokumentet så heter den wrapper, i andra dokument kommer den att ha andra namn vilket kommer låta oss att använda samma css fil och göra olika layouts till olika sidor, det gör det också lättare att undvika klassselektorer-->
+            <header>
+                <nav><!--Den globala navigations menyn innehåller en länk kopplad till en bild som går tillbaka till startsidan samt ett antal länkar-->
+                    <ul>
+                        <li>
+                            <a href="../index.html"><h1>Tims Recept</h1></a>
+                        </li>
+                        <li>
+                            <a href="./info.html">Information</a>
+                        </li>
+                        <li>
+                            <a href="./kott.html">Kött</a>
+                        </li>
+                        <li>
+                            <a href="#">Veganskt</a>
+                        </li>
+                        <li>
+                            <a href="#">Desert</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <main><!--Sidans huvudinnehåll-->
+                <section><!--En sektion som befinner sig längst upp i main, den tar upp hela skärmens bredd och har en bakgrundsbild tillsammans med en sökruta och ett antal länkar som leder till sidor som har recept av olika typer av maträtter-->
+                    <section>
+                        <form>
+                            <input type="text" placeholder="Sök efter recept" id="sökRuta">
+                        </form>
+                        <section id="resultat">
+                        </section>
+                    </section>
+                </section>
+                <section>
+                    <aside>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="./kott.html">Kött</a>
+                                    <ul>
+                                        <li>
+                                            <a href="./not.html">Nöt</a>
+                                        </li>
+                                        <li>
+                                            <a href="./flask.html">Fläsk</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Veganskt</a>
+                                </li>
+                                <li>
+                                    <a href="#">Desert</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+                    <section>
+                        <h2>Recept med Nötkött</h2>
+                        <section>    
+                            <a href="./yakinku.html">
+                                <article>
+                                    <img src="../src/yakiniku-foto-nurlan-mathem.jpeg" alt="Mat">
+                                    <h3>Yakinku</h3>
+                                    <p>50 minuter - Kött</p>
+                                </article>
+                            </a>
+
+                            <a href="./kottbullar.html">
+                                <article>
+                                    <img src="../src/SwedishMeatballs.webp" alt="Mat">
+                                    <h3>Köttbullar</h3>
+                                    <p>50 minuter - Kött</p>
+                                </article>
+                            </a>
+                        </section>
+                    </section>
+                </section>
+            </main>
+            <footer> <!--Footer elemtet är webbsidans eller webbplatsen sidfot och ska alltid finnas längst ner på sidan-->
+                <p>Kontakt: Tantagda@recept.se</p>
+            </footer>
+        </div>
+    </body>
 </html> 
