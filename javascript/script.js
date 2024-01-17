@@ -8,6 +8,7 @@ let nyckelOrd = [
     "Yakinku"
 ];
 
+
 window.onload = () => {
     resultatElem = document.getElementById("resultat");
     inputElem = document.getElementById("sökRuta");
@@ -35,7 +36,7 @@ function display(resultat) {
 }
 
 function dirigera(element) {
-    const destination = element.innerHTML.replace("ä", "a").replace("ä", "a").replace("ö", "o").toLowerCase().split(' ').join('-');;
+    const destination = element.innerHTML.replace("ä", "a").replace("ä", "a").replace("ö", "o").toLowerCase().split(' ').join('-');
 
     if (window.location.href.includes("index")) {
         window.location.assign("html/" + destination + ".html");
@@ -43,5 +44,3 @@ function dirigera(element) {
         window.location.assign(destination + ".html")
     }
 }
-
-//element.innerHTML.replace("ä", "a").toLowerCase().split(' ').join('-');

@@ -1,15 +1,15 @@
 /*Albin*/
 
 #recept {
-    background-color: rgb(173, 154, 128);
+	background-color: rgb(173, 154, 128);
 
 	margin: 0;
 }
 
 #recept main section:nth-child(1) {
-    display: flex;
+	display: flex;
 
-    justify-content: center;
+	justify-content: center;
 
 }
 
@@ -19,37 +19,37 @@
 	gap: 10px;
 }
 
-#recept img{
-    width: 25%;
+#recept img {
+	width: 25%;
 
-    margin:auto;
-
-}
-
-#recept h2{
-    font-family:arial;
-
-    font-size:30px;
-
-    text-align: center;
+	margin: auto;
 
 }
 
-#recept p{
-    font-family: arial;
+#recept h2 {
+	font-family: arial;
 
-    font-size: 20px;
+	font-size: 30px;
 
-    text-align: center;
-    
+	text-align: center;
+
 }
 
-#recept h3{
-    font-family: arial;
+#recept p {
+	font-family: arial;
 
-    font-size: 25px;
+	font-size: 20px;
 
-    text-align: center;
+	text-align: center;
+
+}
+
+#recept h3 {
+	font-family: arial;
+
+	font-size: 25px;
+
+	text-align: center;
 
 }
 
@@ -57,141 +57,142 @@
 	text-align: center;
 }
 
-#recept main  ul li{
-    font-family: arial;
+#recept main ul li {
+	font-family: arial;
 
-    font-size: 20px;
+	font-size: 20px;
 
-    text-align: center;
+	text-align: center;
 
-    width: fit-content;
+	width: fit-content;
 
-    margin: auto;
+	margin: auto;
 
 }
 
 /*   Theo Brodén   */
 #info {
-    background-color: #fff;
-    margin: 0;
+	background-color: #fff;
+	margin: 0;
 }
 
 #info .wrapper {
-    width: 100%;
-    height: 98vh;
-    margin: 0 auto;
-    display: grid;
-    grid-template-rows: 80px 80px auto 70px;
-    grid-template-areas: 
-    "header"
-    "nav"
-    "main"
-    "footer"
-    ;
+	width: 100%;
+	height: 98vh;
+	margin: 0 auto;
+	display: grid;
+	grid-template-rows: 80px 80px auto 70px;
+	grid-template-areas:
+		"header"
+		"nav"
+		"main"
+		"footer"
+	;
 }
 
 #info main {
-    margin-top: 22em;
+	margin-top: 20em;
 }
 
 
 #info header {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin: 0 auto;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	margin: 0 auto;
 }
 
 #info h2 {
-    font-size: 50px;
-    color: #000;
-    margin-bottom: 25px;
-    position: relative;
-    margin-top: 6em;
+	font-size: 50px;
+	color: #000;
+	margin-bottom: 25px;
+	position: relative;
+	margin-top: 6em;
 }
 
 #info h2::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    display: block;
-    margin: 0 auto;
-    background-color: green;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 4px;
+	display: block;
+	margin: 0 auto;
+	background-color: green;
 }
 
 
 #info section {
-    width: 70%;
-    height: 80%;
-    margin: 0 auto; /*Centrerar innehållet i section på sidan*/
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	width: 70%;
+	height: 80%;
+	margin: 0 auto;
+	/*Centrerar innehållet i section på sidan*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
 }
 
 #info img {
-    flex: 1;
-    overflow: hidden;
-    margin-right: 40px;
-    max-width: 35%;
-    height: auto;
-    display: block;
-    transition: 0.5s ease;
-    border-radius: 7%;    
+	flex: 1;
+	overflow: hidden;
+	margin-right: 40px;
+	max-width: 35%;
+	height: auto;
+	display: block;
+	transition: 0.5s ease;
+	border-radius: 7%;
 
 }
 
-#info img:hover{
-    transform: scale(1.2);
+#info img:hover {
+	transform: scale(1.2);
 }
 
 #info article {
-    flex: 1;
-    max-width: 60%;
-    
+	flex: 1;
+	max-width: 60%;
+
 }
 
 #info article p {
-    font-size: 18px;
-    line-height: 1.5;
-    color: #666;
-    width: 64%;
+	font-size: 18px;
+	line-height: 1.5;
+	color: #666;
+	width: 64%;
 }
 
 #info article a {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    font-size: 19px;
-    padding: 10px 20px;
-    border-radius: 25px;
-    margin-top: 15px;
-    transition: 0.3s ease;
-    background-color: rgba(23, 86, 51, 0.85);
-    
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 19px;
+	padding: 10px 20px;
+	border-radius: 25px;
+	margin-top: 15px;
+	transition: 0.3s ease;
+	background-color: rgba(23, 86, 51, 0.85);
+
 
 }
 
 #info article a:hover {
-    background-image: linear-gradient(rgba(23, 86, 51, 0.85), rgba(25, 95, 54, 0.5) , rgb(23, 77, 23)); 
-    transform: scale(1.2);
-    font-size: 21px;
+	background-image: linear-gradient(rgba(23, 86, 51, 0.85), rgba(25, 95, 54, 0.5), rgb(23, 77, 23));
+	transform: scale(1.2);
+	font-size: 21px;
 
 }
 
 footer {
-    background-color: rgba(23, 86, 51, 0.85);
-    color: #fff;
-    justify-content: center;
-    display: flex;
-    width: 100%;
-    bottom: 0;
-    height: 60px;
+	background-color: rgba(23, 86, 51, 0.85);
+	color: #fff;
+	justify-content: center;
+	display: flex;
+	width: 100%;
+	bottom: 0;
+	height: 60px;
 }
 
 #info footer {
@@ -368,12 +369,12 @@ aside ul {
 	list-style-type: none;
 }
 
-aside > ul > li {
+aside>ul>li {
 	width: 80%;
 	height: 55px;
 }
 
-.wrapper-kött > ul > li:first-child {
+.wrapper-kött>ul>li:first-child {
 	height: 200px;
 }
 
