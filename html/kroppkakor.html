@@ -1,57 +1,57 @@
 <!--Albin-->
-<!DOCTYPE html>
-<html lang="sv">
-    <head>
-        <meta charset="utf-8">
+<!DOCTYPE html> <!--är en deklaration som informerar webbläsaren om att HTML5-standarden används i dokumentet, vilket hjälper webbläsaren att tolka och rendera sidan korrekt.-->
+<html lang="sv"> <!--anger att det primära språket i HTML-dokumentet är svenska ("sv"). Det hjälper till med tillgänglighet, sökoptimering och lokalisering av webbplatsen.-->
+    <head> <!--används för att innehålla metadata om dokumentet, såsom titel, teckenkodning, stilar, länkar till externa resurser och JavaScript-kod. Det ger information och instruktioner för webbläsaren och sökmotorer, men själva innehållet syns inte direkt på webbsidan.-->
+        <meta charset="utf-8"> <!--används för att deklarera teckenkodningen i HTML-dokumentet som utf-8, vilket möjliggör korrekt visning av text och stöd för olika språk och tecken.-->
 
-        <link href="../css/style.css" rel=stylesheet>
+        <link href="../css/style.css" rel=stylesheet> <!--länkar till en extern CSS-fil (style.css) och tillämpar dess stilar på det aktuella HTML-dokumentet. Sökvägen (../css/style.css) anger var CSS-filen finns relativt HTML-filen.-->
 
-        <title>
+        <title> <!--används för att definiera titeln på HTML-dokumentet. Titeln visas i webbläsarens flik och i sökresultat, vilket bidrar till användarupplevelsen och sökoptimering.-->
             kroppkakor
         </title>
     
     </head>
     <body id="recept">
         
-        <div>
-            <header>
+        <div> <!--är en HTML-tag som används för att skapa en divisionscontainer. Den används för att gruppera och organisera andra HTML-element för enklare struktur och styling av webbsidan.-->
+            <header> <!--är en HTML-tag som används för att definiera huvudsektionen av en webbsida. Den innehåller vanligtvis övergripande innehåll som sidorubrik, logotyp och navigeringsmeny.-->
                 <nav><!--Den globala navigations menyn innehåller en länk kopplad till en bild som går tillbaka till startsidan samt ett antal länkar-->
-                    <ul>
-                        <li>
-                            <a href="../index.html"><h1>Tims Recept</h1></a>
+                    <ul> <!-- är en HTML-tag som används för att skapa en olöstad lista på en webbsida. Listpunkterna definieras med <li>-taggen.-->
+                        <li> <!--är en HTML-tag som används för att definiera varje punkt (listelement) inom en olöstad <ul> (olöstad lista) eller <ol> (ordnad lista).-->
+                            <a href="../index.html"><h1>Tims Recept</h1></a> <!--skapar en länk runt rubriken "Tims Recept". När användaren klickar på rubriken kommer de att omdirigeras till sidan "index.html" i överordnad katalog. Det används vanligtvis för att skapa en länk till startsidan av en webbplats.-->
                         </li>
                         <li>
-                            <a href="./info.html">Information</a>
+                            <a href="./info.html">Information</a> <!--skapar en länk med texten "Information", och när användaren klickar på den kommer de att omdirigeras till sidan "info.html" i samma katalog som den aktuella webbsidan.-->
                         </li>
                         <li>
-                            <a href="./kott.html">Kött</a>
+                            <a href="./kott.html">Kött</a> <!--skapar en länk med texten "Kött", och när användaren klickar på den kommer de att omdirigeras till sidan "kott.html" i samma katalog som den aktuella webbsidan.-->
                         </li>
                         <li>
-                            <a href="#">Veganskt</a>
+                            <a href="#">Veganskt</a> <!--skapar en länk med texten "Veganskt". När användaren klickar på länken kommer de inte att omdirigeras till en annan sida utan stanna kvar på den nuvarande sidan. Vanligtvis används detta för interaktion på samma sida, till exempel för att visa eller dölja innehåll.-->
                         </li>
                         <li>
-                            <a href="#">Desert</a>
+                            <a href="#">Desert</a> <!--skapar en länk med texten "Desert". När användaren klickar på länken stannar de kvar på samma sida eftersom href="#" används oftast som en platsmarkör för interaktiva element eller för länkar som inte ännu är implementerade.-->
                         </li>
                     </ul>
                 </nav>
             </header>
 
-            <main>
-                <section>
-                    <img src="https://media.new.kroppkakor.se/2019/06/Kroppkaka2.png" alt="Kroppkaka">
+            <main> <!-- är en HTML-tag som används för att definiera huvudinnehållet på en webbsida. Den markerar den centrala och unika delen av sidan och hjälper till att strukturera HTML-koden.-->
+                <section> <!-- är en HTML-tag som används för att gruppera innehåll med ett gemensamt tema eller ämnesområde på en webbsida. Det hjälper till att organisera och strukturera sidan logiskt.-->
+                    <img src="https://media.new.kroppkakor.se/2019/06/Kroppkaka2.png" alt="Kroppkaka"> <!--inkluderar och visar en bild av en kroppkaka på webbsidan. src specificerar bildens källa och alt tillhandahåller en alternativ text för tillgänglighet.-->
                 </section>
 
-                <h2>
+                <h2> <!-- är en HTML-tag som används för att definiera en rubrik av andra nivån på en webbsida. Den används för att strukturera och rangordna rubriker hierarkiskt.-->
                     Kroppkakor recept
                 </h2>
 
                 <section>
-                    <p>
+                    <p> <!--är en HTML-tag som används för att definiera en paragraf eller ett stycke text på en webbsida. Den används för att strukturera och separera textinnehåll.-->
                         Kroppkakor gör kroppkakor på äkta öländskt vis. Med råriven och kokt potatis med rimmat fläsk- och lökfyllning blir dessa <br> öländska kroppkakor en riktig delikatess. Servera med smör, grädde och lingonsylt. Svensk husmanskost när den är som bäst!
                     </p>
                 </section>
 
-                    <br>
+                    <br> <!--är en HTML-tag som används för att skapa en radbrytning (line break) inom texten på en webbsida. Den används när du vill avsluta den aktuella raden och börja på en ny rad, utan att skapa en ny paragraf.-->
 
                 <section>
                     <p>
@@ -104,7 +104,7 @@
                 </section>
 
                 <section>
-                    <h3>
+                    <h3> <!--är en HTML-tag som används för att definiera en rubrik av tredje nivån på en webbsida. Den används för att strukturera och hierarkiskt rangordna rubriker.-->
                         Steg 1
                     </h3>
 
