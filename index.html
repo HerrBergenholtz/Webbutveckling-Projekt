@@ -1,22 +1,22 @@
 <!--Zacharias-->
-<!DOCTYPE html>
+<!DOCTYPE html><!--Deklarerar doctype till html-->
 
 <html lang="sv">
     <head>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="javascript/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css"><!--Länk till CSS-->
+        <meta charset="UTF-8"><!--Deklarerar dokumentets teckenkodning till Unicode Transformation Format 8-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Deklarerar viewport så att jag kan använda mig av enheter så som vw och vh-->
+        <script src="javascript/script.js"></script><!--Länk till JavaScript-->
         <title>Tims Recept</title>
     </head>
 
-    <body id="index">
-        <div class="wrapper"><!--En div som innehåller allt innehåll på sidan, i detta dokumentet så heter den wrapper, i andra dokument kommer den att ha andra namn vilket kommer låta oss att använda samma css fil och göra olika layouts till olika sidor, det gör det också lättare att undvika klassselektorer-->
+    <body id="index"><!--Body har en id så att just denna sidans innehåll kan väljas med en id-selektor i CSS, detta görs eftersom att all CSS finns i en fil och på detta vis så kan man på ett enkelt sätt välja element i en specifik sida vilket resulterar i renare kod.-->
+        <div class="wrapper"><!--En div som innehåller allt innehåll på sidan-->
             <header>
-                <nav><!--Den globala navigations menyn innehåller en länk kopplad till en bild som går tillbaka till startsidan samt ett antal länkar-->
+                <nav><!--Den globala navigations menyn som innehåller länkar till: startsidan, informationssidan samt som recept kategorier.-->
                     <ul>
                         <li>
-                            <a href="index.html"><h1>Tims Recept</h1></a>
+                            <a href="index.html"><h1>Tims Recept</h1></a><!--h1 befinner sig i header för att ge sidan en god page rank, vilket innebär att sidan är lättfunnen, i det här fallet så är den kopplad till startsidan med en a tagg-->
                         </li>
                         <li>
                             <a href="html/info.html">Information</a>
@@ -35,20 +35,20 @@
             </header>
 
             <main><!--Sidans huvudinnehåll-->
-                <section><!--En sektion som befinner sig längst upp i main, den tar upp hela skärmens bredd och har en bakgrundsbild tillsammans med en sökruta och ett antal länkar som leder till sidor som har recept av olika typer av maträtter-->
+                <section><!--En sektion som befinner sig längst upp i main, den tar upp hela skärmens bredd och har en bakgrundsbild tillsammans med en sökruta som man kan använda för att söka fram recept-->
                     <section>
-                        <form>
-                            <input type="text" placeholder="Sök efter recept" id="sökRuta">
+                        <form><!--Sökrutan befinner sig inuti en form vilket är ett element som innehåller en eller flera input element med olika attribut som påverkar deras funktioner-->
+                            <input type="text" placeholder="Sök efter recept" id="sökRuta"><!--type="text" kommer göra elementet till ett fält där man kan skriva in text. I placeholder-attributet så anger man vad man vill ska stå i fältet innan användaren börjar skriva. Elementet har också ett id så att jag lätt ska kunna använda det i min JavaScript kod.-->
                         </form>
-                        <section id="resultat">
+                        <section id="resultat"><!--En tom section med ett id, detta har jag för att här ska en lista med resultat av sökningen visas, elementen skapas med JavaScript så därför så är den tom.-->
                         </section>
                     </section>
                 </section>
 
-                <section>
-                    <aside>
+                <section><!--Sektion med det huvudsakliga innehållet i main-->
+                    <aside><!--En aside är ett semantiskt element i HTML5 som används för något som visas till sidan av huvudinnehållet som i det här fallet är en lokal meny.-->
                         <nav>
-                            <ul>
+                            <ul><!--En simpel lista som kommer att se olika ut beroende på vilken sidan man befinner sig på.-->
                                 <li>
                                     <a href="html/kott.html">Kött</a>   
                                 </li>
@@ -62,14 +62,14 @@
                         </nav>
                     </aside>
 
-                    <section>
+                    <section><!--Sektionen som innehåller en sektion med artiklar med recept och en heading-->
                         <h2>Populära Recept</h2>
                         <section>
-                            <a href="html/kroppkakor.html">
-                                <article>
-                                    <img src="src/Kroppkakor.png" alt="Mat">
-                                    <h3>Mumsiga Kroppkakor</h3>
-                                    <p>50 minuter - Kött</p>
+                            <a href="html/kroppkakor.html"><!--Varje artikel är inuti en a tagg som är länkad till korresponderande recept-->
+                                <article><!--Artikel är ett semantiskt element som används ungefär som section fast artiklar har annorlunda innehåll, t.ex en artikel för ett recept eller produkt.-->
+                                    <img src="src/Kroppkakor.png" alt="Mat"><!--Bild på receptet-->
+                                    <h3>Mumsiga Kroppkakor</h3><!--En heading med receptets namn-->
+                                    <p>50 minuter - Kött</p><!--En paragraf som innehålelr vilken kategori receptet tillhör samt som hur lång tid det tar att tillaga-->
                                 </article>
                             </a>
 
@@ -100,7 +100,7 @@
                     </section>
                 </section>
             </main>
-            <footer> <!--Footer elemtet är webbsidans eller webbplatsen sidfot och ska alltid finnas längst ner på sidan-->
+            <footer> <!--Footer elemtet är webbsidans eller webbplatsen sidfot och ska alltid finnas längst ner på sidan och innehåller i vårat fall kontaktinformation-->
 				<p>Kontakt: Tantagda@recept.se</p>
 			</footer>
         </div>

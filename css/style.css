@@ -199,7 +199,9 @@ footer {
 	position: fixed;
 }
 
-/*Zacharias*/
+/*==== Zacharias ====*/
+/*Jag fattade fel och trodde att koden skulle vara inne till fredag så det finns en del gammal kod som jag inte har hunnit städa upp vilket jag ber om ursäkt för*/
+
 #index {
 	/*Ändrar textfärg till svart och line-height höjer jag med 40%, jag tar även bort den margin som är standars så att jag ska kunna ha element som tar upp hela bredden av skärmen*/
 	color: black;
@@ -209,6 +211,7 @@ footer {
 }
 
 #index .wrapper {
+	/*Gör så att wrappern som är en div som innehåller allt innehåll i body visas som ett grid vilket kommer säkerställa att innehållet ligger på rätt plats, i det här fallet så behöver jag inte definiera några rader eller kolumner*/
 	display: grid;
 }
 
@@ -218,7 +221,7 @@ header nav {
 	margin-top: -4px;
 	height: 80px;
 	width: 100%;
-	position: fixed;
+	position: fixed; /*Position fixed så att den alltid finns längst upp på skärmen*/
 	top: 0;
 	z-index: 1;
 	background-color: rgba(23, 86, 51, 0.85);
@@ -227,7 +230,7 @@ header nav {
 }
 
 header nav>ul {
-	/*Jag väljer att visa min nav som en grid som endast har en kolumn så att alla list-items ligger vågrätt*/
+	/*Jag väljer att visa min nav som en grid som endast har en rad så att alla list-items ligger vågrätt*/
 	display: grid;
 	grid-template-columns: 1fr repeat(5, 2.5fr);
 	grid-gap: 60px;
@@ -238,24 +241,26 @@ header nav>ul {
 }
 
 header nav>ul>li {
-	/*Stylar list-items så att de är centrerade*/
+	/*Stylar list-items så att de inte har några prickar och ger de en bestämd bredd samt som jag ändrar färgen så att det passar bättre in på bakgrundsfärgen*/
 	list-style-type: none;
 	width: 150px;
 	color: #fff;
 }
 
 header nav>ul>li:nth-child(1)>a {
-	/**/
+	/*Tar bort padding på det första a elementet som innehåller h1 eftersom att den inte behövs och bara krånglar till det*/
 	padding: 0;
 	width: fit-content;
 }
 
 h1 {
+	/*h1 stylar jag bara så att den ska passa in i navbaren bra genom att justera dess margin*/
 	color: white;
 	margin-top: 16px;
 }
 
 header ul li img {
+	/*CSS regel som var kvar från när det var en bild i header, ingen funktion längre*/
 	max-width: 70px;
 }
 
@@ -271,7 +276,7 @@ header nav ul li a {
 /*Bild*/
 
 #index main>section:first-child {
-	/*Eftersom att det ska finnas en sökruta samt som ett antal länkar i den här sektionen så gör jag ett 3*3 grid så att jag lätt kan positionera sökrutan i mitten och länkarna under den, ändrar även bakgrundsbilden*/
+	/*Eftersom att det ska finnas en sökruta samt som ett antal länkar i den här sektionen så gör jag ett 3*3 grid så att jag lätt kan positionera sökrutan i mitten, ändrar även bakgrundsbilden till en inbjudande bild på mat */
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
@@ -279,7 +284,7 @@ header nav ul li a {
 	background-image: url(../src/photo-1504674900247-0877df9cc836.avif);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
+	background-position: center; /*Regler för att centrera bilden och göra så att den täcker hela skärmen även om den inte är i optimal storlek*/
 }
 
 #index main>section:first-child>section:first-child {
@@ -299,6 +304,7 @@ header nav ul li a {
 }
 
 #resultat ul {
+	/*Använder absolut positionering så att resultat sektionen ska visas över allt annat innehåll, skriver sedan vanliga regler för en lista */
 	background-color: #fff;
 	position: absolute;
 	width: 405px;
@@ -310,6 +316,7 @@ header nav ul li a {
 }
 
 #resultat ul li {
+	/*Stylar själva list elementen så att de ser bra ut*/
 	display: block;
 	font-size: 18px;
 	text-decoration: none;
@@ -318,11 +325,12 @@ header nav ul li a {
 }
 
 #resultat ul li:hover {
+	/*Annan färg på list element när användare hovrar över de för tydlighet*/
 	background-color: #f3f3f3;
 }
 
 #index main>section:first-child>section:nth-child(2) {
-	/*Placerar länkarna på mitt grid samt som att göra det till ett grid*/
+	/*Gamla regler kvar från när den lokala menyn var under sökrutan*/
 	grid-column: 2/3;
 	grid-row: 3/4;
 	display: grid;
@@ -330,7 +338,7 @@ header nav ul li a {
 }
 
 #index main>section:first-child>section:nth-child(2) a {
-	/*Jag stylar länkarna så att de ser ut som knappar, genom att ge dem en annan bakgrundsfärg och en border med rundade hörn*/
+	/*Gamla regler kvar från när den lokala menyn var under sökrutan*/
 	height: 30px;
 	width: 90%;
 	background-color: #f3f3f3;
@@ -375,6 +383,7 @@ aside>ul>li {
 }
 
 .wrapper-kött>ul>li:first-child {
+	/*Gör så att de första list elementet är större i köttsidan då den kommer att innehålla ytterliggare en ul och behöver mer plats*/
 	height: 200px;
 }
 
@@ -387,6 +396,7 @@ aside ul li a {
 }
 
 .wrapper-nöt aside ul li ul li:first-child {
+	/*Gör så att den länk som korresponderar till den sida man är inne på har en annan bakgrundsfärg*/
 	background-color: #175633;
 }
 
@@ -395,16 +405,19 @@ aside ul li a {
 }
 
 aside ul li ul {
+	/*Ger listan inuti list elementet en större padding-inline-start för att få effekten av ett indrag som signalerar att de är underkategorier*/
 	padding-inline-start: 30px;
 }
 
 #grill aside ul li:nth-child(2) {
+	/*Gammal regel som inte har någon effekt*/
 	background-color: #175633;
 }
 
-/*Populära produkter*/
+/*Populära recept*/
 
 #index main>section:nth-child(2) section:nth-child(2)>section {
+	/*Stylar den sektionen som innehåller populära recept, jag visar den som en grid med tre kolumner som är lika stora och rader skapas automatiskt */
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: auto;
@@ -412,12 +425,14 @@ aside ul li ul {
 }
 
 #index h2 {
+	/*Stylar h2 som finns över sektionen med recept*/
 	text-align: center;
 	font-size: 30px;
 	margin: 30px;
 }
 
 #index main>section:nth-child(2) section:nth-child(2) article {
+	/*Artiklarna som innehåller recept gör jag till grids, jag ger dem en bredd som är relativ till skärmens bredd och en bestämd höjd, jag bestämmer också storleken på raderna, detta gör jag så höjden på artiklarna och placeringen av de andra innehållet i artikeln inte påverkas av bilders höjd eftersom att de varierar*/
 	display: grid;
 	grid-template-rows: 200px 65px 65px;
 	width: 20vw;
@@ -428,34 +443,41 @@ aside ul li ul {
 }
 
 #index main>section:nth-child(2) section:nth-child(2) article:hover {
+	/*När en artikel hovras över så får den en box shadow som har en transition för att göra det snyggare, detta görs både för att det ser bra ut men även för att göra det tydligt att artikeln är klickbar*/
 	box-shadow: 0 0 10px 10px #cecece;
 	transition: 0.3s ease;
 }
 
 #index main>section:nth-child(2) section:nth-child(2) a {
+	/*Stylar de länkar som innehåller artiklar så att a taggen inte är större än artikeln*/
 	width: min-content;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 #index h3 {
+	/*Gör så att h3 har lite extra padding*/
 	padding-left: 10px;
 }
 
 #index main>section:nth-child(2) section:nth-child(2) article a {
+	/*Gammal regel utan funktion*/
 	color: inherit;
 }
 
 #index main>section:nth-child(2) section:nth-child(2) article img {
+	/*Gör så att bildens bredd inte är 100% så att den inte tar upp hela bredden av artikeln, centrerar med margin: auto;*/
 	width: 90%;
 	margin: auto;
 }
 
 #index main>section:nth-child(2) section:nth-child(2) article p {
+	/*Gör informationstexten mindre och med extra padding*/
 	font-size: 16px;
 	padding-left: 20px;
 }
 
+/*Love foucus hate regler gör att göra skillnad på länkars olika tillstånd*/
 a:link {
 	color: inherit;
 }
