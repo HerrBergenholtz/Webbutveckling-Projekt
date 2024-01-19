@@ -73,16 +73,16 @@
 /*   Theo Brodén   */
 #info {
 	background-color: #fff; /* Sätter bakgrundsfärgen till vit för sidan */
-	margin: 0;
+	margin: 0; /* Sätter marginalen för elementet till 0 på info sidan (överst, nederst, vänster och höger) */
 }
 
 #info .wrapper {
-	width: 100%;
-	height: 98vh;
-	margin: 0 auto;
-	display: grid;
-	grid-template-rows: 80px 80px auto 70px;
-	grid-template-areas:
+	width: 100%; /* Ställer in bredden på elementet till 100% */
+	height: 98vh; /* Ställer in höjden på elementet till 98% av vyhöjden (viewport height) */
+	margin: 0 auto; /* Centrerar elementet horisontellt genom att sätta margin till 0 och auto */
+	display: grid; /* Använder CSS Grid för att skapa en rutnätslayout */
+	grid-template-rows: 80px 80px auto 70px; /* Ange rader för rutnätet med höjd för varje rad */
+	grid-template-areas: /* Ange områden för varje rad i rutnätet */
 		"header"
 		"nav"
 		"main"
@@ -91,112 +91,110 @@
 }
 
 #info main {
-	margin-top: 20em;
+	margin-top: 20em; /* Skapar en toppmarginal på 20em för #info main elementet */
 }
 
 
 #info header {
-	width: 90%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	text-align: center;
-	margin: 0 auto;
+	width: 90%; /* Sätter bredden på elementet till 90% av dess förälders bredd */
+	display: flex; /* Använder flexbox display för att skapa en flexibel layout */
+	justify-content: center; /* Centrerar innehållet horisontellt genom att justera det till mitten */
+	align-items: center; /* Centrerar innehållet vertikalt genom att justera det till mitten */
+	flex-direction: column; /* Ställer in flexriktningen till kolumn */
+	text-align: center; /* Centrerar texten */
+	margin: 0 auto; /* Centrerar elementet horisontellt genom att sätta margin till 0 och auto */
 }
 
 #info h2 {
-	font-size: 50px;
-	color: #000;
-	margin-bottom: 25px;
-	position: relative;
-	margin-top: 6em;
+	font-size: 50px; /* Ändrar texten storlek till 50px */
+	color: #000; /* Sätter färgen svart på texten */
+	margin-bottom: 25px; /* Skapar en bottmarginal på 25 pixlar för att lägga till utrymme under #info h2 elementet. */
+	position: relative; /* Sätter positionen för #info h2 elementet till relativ, vilket gör att det positioneras relativt till sitt normala flöde */
+	margin-top: 6em; /* Skapar en toppmarginal på 6 em-enheter för att ge ett vertikalt utrymme ovanför #info h2 elementet */
 }
 
 #info h2::after {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 4px;
-	display: block;
-	margin: 0 auto;
-	background-color: green;
+	content: ""; /* Innehållet i pseudo-elementet är en tomt eftersom att :after måste innehålla content för att synas */
+	position: absolute; /* Sätter positionen till absolut, vilket placerar det relativt till närmaste positionerade förälderelement */
+	width: 100%; /* Sätter bredden på psuedo-elemtent till 100% av dess förälders bredd */
+	height: 4px; /* Sätter höjden på pseudo-elementet till 4 pixlar */
+	display: block; /* Visar pseudo-elementet som ett block, vilket innebär att det kommer att visas som ett blockelement och därmed ta upp hela bredden */
+	margin: 0 auto; /* Centrerar elementet horisontellt genom att sätta margin till 0 och auto */
+	background-color: green; /* Sätter färgen på psuedo-elemtet till grön */
 }
 
 
 #info section {
-	width: 70%;
-	height: 80%;
-	margin: 0 auto;
-	/*Centrerar innehållet i section på sidan*/
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	width: 70%; /* Sätter bredden på #info section elementet till 70% av dess förälders bredd */
+	height: 80%; /* Sätter höjden på #info section elementet till 80% av dess förälders höjd */
+	margin: 0 auto; /* Centrerar elementet horisontellt genom att sätta margin till 0 och auto */
+	display: flex; /* Använder flexbox display för att skapa en flexibel layout för barnen inom #info section elementet */
+	justify-content: space-between; /* Centrerar innehållet horisontellt genom att justera det till mitten och gör så att det existerar ett mellanrum mellan de olika innehållen */
+	align-items: center; /* Centrerar innehållet vertikalt genom att justera det till mitten */
 
 }
 
 #info img {
-	flex: 1;
-	overflow: hidden;
-	margin-right: 40px;
-	max-width: 35%;
-	height: auto;
-	display: block;
-	transition: 0.5s ease;
-	border-radius: 7%;
-
+	flex: 1; /* Sätter flexibiliteten för elementet till 1, vilket gör att det kan expandera och fylla det tillgängliga utrymmet */
+	overflow: hidden; /* Döljer överflödigt innehåll om det är större än dess container */
+	margin-right: 40px; /* Skapar en högremarginal på 40 pixlar för att skapa utrymme till höger om #info img elementet */
+	max-width: 35%; /* Sätter maximal bredd för #info img elementet till 35% av dess container */
+	height: auto; /* Sätter höjden till auto, vilket bibehåller dess proportioner */
+	display: block; /* Visar #info img elementet som ett blockelement */
+	transition: 0.5s ease; /* Tillämpar en övergångseffekt med 0,5 sekunders varaktighet och en mjuk övergångseffektfunktion */
+	border-radius: 7%; /* Avrundar hörnen på elementet med 7% border-radius */
 }
 
 #info img:hover {
-	transform: scale(1.2);
+	transform: scale(1.2); /* När muspekaren är över elementet så förstoras elementet till 1.2 av dess ursprungliga storlek */
 }
 
 #info article {
-	flex: 1;
-	max-width: 60%;
+	flex: 1; flex: 1; /* Sätter flexibiliteten för elementet till 1, vilket gör att det kan expandera och fylla det tillgängliga utrymmet */
+	max-width: 60%; /* Sätter maximal bredd för #info img elementet till 60% av dess container */
 
 }
 
 #info article p {
-	font-size: 18px;
-	line-height: 1.5;
-	color: #666;
-	width: 64%;
+	font-size: 18px; /* Sätter texten storlek till 18px */
+	line-height: 1.5; /* Sätter ett radavstånt på 1.5 mellan texten */
+	color: #666; /* Sätter färgen grå för texten  */
+	width: 64%; /* Sätter bredden på p elementet till 64% av dess container */
 }
 
 #info article a {
-	display: inline-block;
-	text-decoration: none;
-	color: #fff;
-	font-size: 19px;
-	padding: 10px 20px;
-	border-radius: 25px;
-	margin-top: 15px;
-	transition: 0.3s ease;
-	background-color: rgba(23, 86, 51, 0.85);
+	display: inline-block; /* Visar innehållet som ett block element inom textflödet, som behåller inline egenskaper */
+	text-decoration: none; /* Tar bort standard understrykning för länken */
+	color: #fff;  /* Sätter färgen till vit på länken */
+	font-size: 19px; /* Sätter texten storlek till 19px */
+	padding: 10px 20px; /* Lägger till utfyllnad på 10 pixlar över och under, samt 20 pixlar på sidorna */
+	border-radius: 25px; /* Avrundar hörnen med en border-radius på 25 pixlar */
+	margin-top: 15px; /* Skapar en toppmarginal på 15px */
+	transition: 0.3s ease; /* Skapar en övergångseffekt med en varaktighet på 0,3 sekunder och en mjuk övergångseffektfunktion */
+	background-color: rgba(23, 86, 51, 0.85); /* Sätter bakgrundsfärgen till (rgba(23, 86, 51, 0.85)) på länken */
 
 
 }
 
 #info article a:hover {
-	background-image: linear-gradient(rgba(23, 86, 51, 0.85), rgba(25, 95, 54, 0.5), rgb(23, 77, 23));
-	transform: scale(1.2);
-	font-size: 21px;
+	background-image: linear-gradient(rgba(23, 86, 51, 0.85), rgba(25, 95, 54, 0.5), rgb(23, 77, 23)); /* Sätter en bakgrundsfärg med en linjär gradient från transparent grön till transparent grön till mörkare grön */
+	transform: scale(1.2); /* När muspekaren är över elementet så förstoras elementet till 1.2 av dess ursprungliga storlek */
+	font-size: 21px; /* Sätter textens storlek till 21px */
 
 }
 
 footer {
-	background-color: rgba(23, 86, 51, 0.85);
-	color: #fff;
-	justify-content: center;
-	display: flex;
-	width: 100%;
-	bottom: 0;
-	height: 60px;
+	background-color: rgba(23, 86, 51, 0.85); /* Sätter bakgrundsfärgen på footern till grön  */
+	color: #fff; /* Sätter text färgen till vit */
+	justify-content: center; /* Centrerar innehållet horisontellt genom att justera det till mitten */
+	display: flex; /* Använder flexbox display för att skapa en flexibel layout */
+	width: 100%; /*  Sätter bredden för footern till 100% */
+	bottom: 0; /* Placerar footern längst ned på sidan genom att sätta dess avstånd från botten till 0 */
+	height: 60px; /*     Sätter höjden på footern till 60 pixlar */
 }
 
 #info footer {
-	position: fixed;
+	position: fixed; /* Sätter positionen för footern till fixed, vilket håller den fixerad på skärmen (dvs på botten) oavsett scrollposition */
 }
 
 /*Zacharias*/
